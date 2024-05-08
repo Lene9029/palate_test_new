@@ -115,13 +115,7 @@ class _HomeScreenState extends State<detect_object_page> {
       body: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          ElevatedButton(onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => AddRecipe()));
-                }, child: const Text('Add Recipe')),
-          SizedBox(height: 80,),
-
-                
+        children: [      
           //Image with Detections....
           !firststate
               ? !message ? LoaderState() : Text("Select the Camera to Begin Detections")
