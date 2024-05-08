@@ -99,10 +99,8 @@ class _HomeScreenState extends State<detect_object_page> {
   }
 
   resultData() {
-    var result = objDetect.forEach((element) {
-         
-        var data = element?.className;   
-    
+    var result = objDetect.forEach((element) { 
+        var data = element?.className; 
     });
   }
   
