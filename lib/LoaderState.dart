@@ -39,7 +39,6 @@ class _LoaderStateState extends State<LoaderState>
                 color: Color(0XFF0000FFFF),
                 borderRadius: BorderRadius.circular(8.0)),
             child: Container(
-              margin: EdgeInsets.only(right: 20.0),
               child: Gif(
                 image: AssetImage("images/searching.gif"),
                 controller:

@@ -15,10 +15,6 @@ class detect_object_page extends StatefulWidget {
 
   @override
   State<detect_object_page> createState() => _HomeScreenState();
-
-  
-
-  
 }
 
 class _HomeScreenState extends State<detect_object_page> {
@@ -31,13 +27,12 @@ class _HomeScreenState extends State<detect_object_page> {
   List<ResultObjectDetection?> objDetect = [];
   bool firststate = false;
   bool message = true;
+  
   @override
   void initState() {
     super.initState();
     loadModel();
     runObjectDetection();
-    
-    
   }
 
   Future loadModel() async {
