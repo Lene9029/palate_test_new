@@ -27,7 +27,7 @@ class _HomeScreenState extends State<detect_object_page> {
   List<ResultObjectDetection?> objDetect = [];
   bool firststate = false;
   bool message = true;
-  
+
   @override
   void initState() {
     super.initState();
