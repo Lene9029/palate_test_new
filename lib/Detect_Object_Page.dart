@@ -80,6 +80,7 @@ class _HomeScreenState extends State<detect_object_page> {
         await File(image!.path).readAsBytes(),
         minimumScore: 0.1,
         IOUThershold: 0.3);
+
     objDetect.forEach((element) {
       print({
         "score": element?.score,
@@ -101,8 +102,13 @@ class _HomeScreenState extends State<detect_object_page> {
       _image = File(image.path);
     });
   }
+
   resultData() {
-    var result = objDetect;
+    var result = objDetect.forEach((element) {
+         
+        var data = element?.className;   
+    
+    });
   }
   
   @override
